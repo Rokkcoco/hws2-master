@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {FC} from 'react'
 import s from './Message.module.css'
 
 // нужно создать правильный тип вместо any
@@ -22,9 +22,8 @@ export type MessagePropsType = {
     message: MessageType
 }
 
-
 // нужно отобразить приходящие данные
-const Message = (props: MessagePropsType) => {
+const Message = (props:MessagePropsType) => {
     return (
         <div id={'hw1-message-' + props.message.id} className={s.message}>
             <div className={s.imageAndText}>
