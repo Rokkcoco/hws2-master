@@ -29,7 +29,7 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
         }
         case 'check': {
 
-            return state.filter(t => t.age === 18)
+            return state.filter(t => t.age >= 18)
         }
         default:
             return state
