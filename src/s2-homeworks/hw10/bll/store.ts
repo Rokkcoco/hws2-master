@@ -1,5 +1,5 @@
 import { loadingReducer } from './loadingReducer'
-import { combineReducers, legacy_createStore } from 'redux'
+    import { combineReducers, legacy_createStore } from 'redux'
 import { themeReducer } from '../../hw12/bll/themeReducer'
 
 const reducers = combineReducers({
