@@ -7,7 +7,7 @@ type GreetingContainerPropsType = {
     addUserCallback: (e:string)=>void // need to fix any
 }
 
-export const pureAddUser = (name: string, setError: React.Dispatch<SetStateAction<string>>, setName: React.Dispatch<SetStateAction<string>>, addUserCallback: any) => {
+export const pureAddUser = (name: string, setError: React.Dispatch<SetStateAction<string>>, setName: React.Dispatch<SetStateAction<string>>, addUserCallback: (e:string)=>void) => {
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
    if (name.trim() === "") {
        setError("Ошибка! Введите имя!")
