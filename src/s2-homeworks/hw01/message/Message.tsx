@@ -33,6 +33,7 @@ const Message = (props:MessagePropsType) => {
                     src={props.message.user.avatar}
                     //
                 />
+                <div className={s.angle}>
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         {/*создаёт студент*/}
@@ -50,6 +51,7 @@ const Message = (props:MessagePropsType) => {
                 {/*создаёт студент*/}
                 {props.message.message.time}
                 {/**/}
+            </div>
             </div>
         </div>
     )

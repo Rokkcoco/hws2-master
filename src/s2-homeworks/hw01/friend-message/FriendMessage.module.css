@@ -1,80 +1,67 @@
 .friendMessage {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
+    height: 77px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px 0;
+    text-align: left;
 }
 
 .friendImageAndText {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 70px;
+    align-items: flex-end;
 }
 
 .friendImageAndText img {
     width: 48px;
     height: 48px;
-    padding-right: inherit;
+    margin: 12px 12px 5px 0;
 }
 
 .friendText {
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
+    position: relative;
+    background-color: #F5F7FB;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-style: normal;
     font-size: 16px;
     line-height: 20px;
-    margin-left: 20px;
-    /* identical to box height */
-
-
-    color: #000000;
-    background: #F5F7FB;
-    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
-    border-radius: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
+    padding: 7px 13px 8px 13px;
 }
 
 .friendText:after {
-
+    content: '';
+    position: absolute;
+    border-top: 30px solid #F5F7FB;
+    border-right: 30px solid transparent;
+    bottom: 15px;
+    left: -25px;
+    transform: translate(50%, 100%) rotate(45deg)
 }
 
 .friendName {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    padding-right: 10px;
-    color: #000000;
+    padding-bottom: 3px;
 }
 
 .friendMessageText {
+    max-width: 490px;
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    margin: 10px;
-    min-width: 50px;
-    color: #000000;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 .friendTime {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 10px;
     line-height: 12px;
-    margin-left: 70px;
     color: #000000;
-    margin-top: -10px;
+
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 11px;
 }
