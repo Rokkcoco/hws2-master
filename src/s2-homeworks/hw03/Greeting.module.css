@@ -1,94 +1,96 @@
 .greetingForm {
-
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-left: 70px;
-    margin-top: 31px;
-    height: 300px;
 }
 
 .inputAndButtonContainer {
     display: flex;
-    flex-direction: row;
-
+    height: 36px;
 }
 
 .error {
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #CC0000;
+
+    margin-top: 7px;
 }
 
 .input {
-    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 12px;
+    min-width: 370px;
+    height: 35px;
     border: 1px solid #D1D1D1;
     border-radius: 5px;
-    height: 36px;
-    width:  300px;
-
+    margin-right: 12px;
 }
 
-.input:focus {
-    border-radius: 2px solid #000000;
+input:focus,
+input:active {
+    outline: none;
+    border: 1px solid #D1D1D1;
 }
 
 .errorInput {
-    border: 1px solid #CC0000;
+    min-width: 370px;
+    height: 35px;
     border-radius: 5px;
+    margin-right: 12px;
+    border: 1px solid #CC0000;
 }
 
 .button {
-    width: 78px;
-    height: 36px;
-    background: #0066CC;
-    border-radius: 3px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    margin-left: 12px;
+    color: #FFFFFF;
+    background: #0066CC;
+    border-radius: 3px;
     border: none;
-    color: white;
+    padding: 5px 24px;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.9;
 }
 
 .button:focus {
-    background: #0066CC;
-    opacity: 0;
+
 }
 
 .button:active {
-    background: #0066CC;
+
 }
 
 .button:disabled {
-    background: #0066CC;
     opacity: 0.5;
 }
 
 .text {
+    margin-bottom: 9px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-
     color: rgba(0, 0, 0, 0.5);
 }
 
 .greeting {
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
+    margin-top: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    color: #000000;
+}
+
+.greetingError {
+    margin-top: 30px;
 }
