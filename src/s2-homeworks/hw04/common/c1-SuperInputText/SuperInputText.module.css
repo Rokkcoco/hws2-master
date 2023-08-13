@@ -1,10 +1,24 @@
 .input:focus {
+    outline: none;
+    border: 1px solid #D1D1D1;
 }
 
 .input {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 12px;
+    min-width: 370px;
+    height: 35px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    margin-right: 12px;
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .superInput {
@@ -12,14 +26,21 @@
 }
 
 .errorInput {
-border: 2px solid red;
+    min-width: 370px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 12px;
+    border: 1px solid #CC1439;
 }
 
 .errorInput:focus {
-    border: 5px solid red;
+    border: 1px solid #CC1439;
 }
 
 .error {
-
-    color: red;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #CC1439;
+    margin-bottom: 5px;
 }
