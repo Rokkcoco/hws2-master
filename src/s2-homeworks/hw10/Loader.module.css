@@ -1,3 +1,16 @@
 .loader {
     /*свг и/или анимация*/
+    width: 90px;
+    height: 90px;
+    transform: rotate(45deg);
+    animation: loader 2s linear infinite;
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
 }
