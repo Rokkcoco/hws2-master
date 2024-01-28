@@ -1,5 +1,5 @@
 import React from 'react'
-import {log} from "util";
+
 
 // добавить в проект иконки и импортировать
 const downIcon = '[\\/]'
